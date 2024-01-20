@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 100%;
+}
+
+#nav-bar {
+  float: right;
+  border: 1 px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+}
+
+#search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search input {
+  width: 65%;
+  height: 35px;
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+
+#invoke {
+  z-index: +1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lang-opts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#footer-pt1 {
+  width: 100%;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: flex-start;
+  background-color: lightgrey;
+  opacity: 50%;
+}
+
+#footer-pt2 {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  opacity: 50%;
+}
+
+#find {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#find div {
+  width: 65%;
+  border: 3px solid lightgrey;
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+a:link {
+  color: black;
+}
+
+#list-1,
+#list-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
