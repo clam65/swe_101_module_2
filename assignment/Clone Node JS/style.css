@@ -5,17 +5,22 @@
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   padding: 10px;
+  padding-top: 16px;
   height: 35px;
 }
 
-#menu {
+#menu li a {
+  color: white;
+  text-decoration: none;
+}
+#nav-list {
   display: flex;
-  width: 20%;
-  gap: 30px;
-  position: relative;
-  left: 70px;
+  gap: 20px;
 }
 
 main {
@@ -31,11 +36,11 @@ main {
   left: 70px;
 }
 
-nav li a {
+/*nav li a {
   font-size: 16px;
   color: lightgrey;
   text-decoration: none;
-}
+}*/
 
 #about {
   position: relative;
@@ -56,7 +61,6 @@ nav li a {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  color: white;
   font-size: 30;
   font-weight: 400;
 }
@@ -70,7 +74,7 @@ nav li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   color: white;
   font-size: 30;
   font-weight: 400;
@@ -81,6 +85,9 @@ nav li a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+a.ver-choice {
   text-decoration: none;
 }
 
@@ -99,3 +106,26 @@ pre {
   font-size: 10px;
   color: white;
 }
+
+#previous-release {
+  text-decoration: none;
+  color: black;
+}
+
+#previous-release:hover {
+  color: green;
+  transition: all 200ms;
+  border: 1px solid black;
+  background-color: lightseagreen;
+} /* Applied this css but not working  */
+
+#previous-release-container {
+  position: relative;
+  left: 150px;
+}
+
+/* 1. How to add | in list.
+  2. How to plan the hierarchy for containers
+  3. Naming conventions. What kind of name shall we use 
+  4. How we do css for the items <a> in <li>. Do we` 
+  type nav li a, or nav li*/
