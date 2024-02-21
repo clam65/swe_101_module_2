@@ -16,6 +16,7 @@ main {
   border: 1 px solid black;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   gap: 30px;
 }
 
@@ -108,4 +109,10 @@ a:link {
   justify-content: flex-start;
   align-items: center;
   gap: 18px;
+}
+
+#footer-pt1 {
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 2px solid black;
 }
