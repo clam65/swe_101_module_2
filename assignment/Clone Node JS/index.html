@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="nodejs.org"
-        ><img src="./images/node_js_logo.svg" alt="nodejs-logo" width="80" `
+        ><img src="./images/nodejs-logo.svg" alt="nodejs-logo" width="80" `
       /></a>
       <nav id="menu">
         <ul id="nav-list">
@@ -23,13 +23,24 @@
           <li><a href="https://openjsf.org/certification">CERTIFICATION</a></li>
         </ul>
       </nav>
-      <img
-        src="./images/Crescent_Favicon.svg"
-        alt="Theme"
-        width="10"
-        style="position: relative; left: 10px"
-      />
-      <img src="./images/Language_Selection.svg" alt="Lang" width="10" />
+      <div id="page-options">
+        <a href="https://www.nodejs.org/mode">
+          <img
+            src="./images/crescent-fabvicon.svg"
+            alt="Theme"
+            width="10"
+            style="padding: 15px"
+          />
+        </a>
+        <a href="https://www.nodejs.org">
+          <img
+            src="./images/language-selection.svg"
+            alt="Lang"
+            width="10"
+            class="option"
+          />
+        </a>
+      </div>
     </header>
     <br /><br />
 
@@ -44,48 +55,64 @@
 
       <div id="node-version">
         <div class="node-ver">
-          <a href="https://nodejs.org/dist/v20.11.0/node-v20.11.0-x64.msi"
-            >20.11.0 LTS<br />
-            <small>Recommended For Most Users</small>
-          </a>
-          <ul class="ver-choice">
-            <li>
-              <a href="https://nodejs.org/en/download/">| Other Downloads</a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#20.11.0"
-                >| Changelogs</a
-              >
-            </li>
-            <li><a href="">| API Docs</a></li>
-          </ul>
+          <div class="version-container">
+            <div class="recommended">
+              <a href="https://nodejs.org/dist/v20.11.0/node-v20.11.0-x64.msi">
+                <div>20.11.0 LTS</div>
+                <small>Recommended For Most Users</small>
+              </a>
+            </div>
+          </div>
+          <div class="options-container">
+            <ul class="ver-choice">
+              <li>
+                <a href="https://nodejs.org/en/download/">| Other Downloads</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#20.11.0"
+                  >| Changelogs</a
+                >
+              </li>
+              <li>
+                <a href="https://nodejs.org/dist/latest-v21.x/docs/api/"
+                  >| API Docs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="node-ver">
-          <a href="https://nodejs.org/dist/v21.6.0/node-v21.6.0-x64.msi"
-            >21.6.0 Current<br />
-            <small>Latest Features</small>
-          </a>
-          <ul class="ver-choice">
-            <li>
-              <a href="https://nodejs.org/en/download/">| Other Downloads</a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#20.11.0"
-                >| Changelogs</a
-              >
-            </li>
-            <li>
-              <a href="https://nodejs.org/dist/latest-v21.x/docs/api/"
-                >| API Docs</a
-              >
-            </li>
-          </ul>
+          <div class="version-container">
+            <div class="recommended">
+              <a href="https://nodejs.org/dist/v21.6.2/node-v21.6.2-x64.msi">
+                <div>21.6.0 Current</div>
+                <small>Latest Features</small>
+              </a>
+            </div>
+          </div>
+          <div class="options-container">
+            <ul class="ver-choice">
+              <li>
+                <a href="https://nodejs.org/en/download/">| Other Downloads</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#20.11.0"
+                  >| Changelogs</a
+                >
+              </li>
+              <li>
+                <a href="https://nodejs.org/dist/latest-v21.x/docs/api/"
+                  >| API Docs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div id="previous-release-container">
         For information about supported releases, see the
         <a
@@ -134,3 +161,12 @@
     </footer>
   </body>
 </html>
+
+<!-- let arr = [3,1,6,9];
+let i = 0;
+
+result = ""
+do {
+  result += arr[i];
+  i++;
+} while (i < arr.length) -->
