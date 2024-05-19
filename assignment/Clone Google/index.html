@@ -26,10 +26,10 @@
         /></a>
       </div>
       <br /><br />
-      <div id="search">
-        <div>
-          <img src="./images/Google_logo.png" alt="Google-Logo" width="350" />
-        </div>
+      <div id="query">
+        <picture>
+          <img src="./images/Google-Logo.png" alt="Google-Logo" width="350" />
+        </picture>
         <form name="search" id="find">
           <a href="">
             <img
@@ -39,18 +39,14 @@
               style="border: none"
             />
           </a>
-          <input
-            type="text"
-            name="search"
-            style="border: none"
-            onclick="return clearForm()"
-          />
+          <input type="text" name="search" style="border: none" />
           <a href="">
             <img
-              src="./images/clear-button.png"
+              src="./images/Clear-Button.png"
               alt="clear-button"
               width="30"
-              style="border: white"
+              style="border: none"
+              onclick="return clearForm()"
             />
           </a>
           <a href="">
@@ -58,16 +54,16 @@
               src="./images/Google-Microphone.png"
               alt="mic"
               width="40"
-              style="border: white"
+              style="border: none"
             />
           </a>
         </form>
-        <div id="invoke">
+        <div id="search">
           <a href="search.google.com" style="margin: 10px"
-            ><p>Google Search</p></a
+            ><p class="button">Google Search</p></a
           >
           <a href="luckytoday.google.com" style="margin: 10px"
-            ><p>I'm feeling lucky</p></a
+            ><p class="button">I'm feeling lucky</p></a
           >
         </div>
         <div id="lang-opts">
@@ -81,8 +77,8 @@
     </main>
     <br /><br /><br /><br />
     <footer>
-      <div id="footer-pt1">Singapore</div>
-      <div id="footer-pt2">
+      <div id="footer-1">Singapore</div>
+      <div id="footer-2">
         <ul style="list-style-type: none; text-decoration: none" id="list-1">
           <li><a href="about.google.com">About Google</a></li>
           <li><a href="advertisement.google.com">Advertisement</a></li>

@@ -1,9 +1,11 @@
 * {
+  /* Default settings for containers */
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  /* Default settings for main canvas */
   margin: 0;
   padding: 0;
 }
@@ -14,21 +16,21 @@ main {
 #nav-bar {
   float: right;
   border: 1 px solid black;
-  display: flex;
+  display: flex; /* Using flex-box to align items */
   flex-flow: row nowrap;
   align-items: center;
   gap: 30px;
 }
 
-#search {
+#query {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Using flex-box to align items */
   justify-content: center;
   align-items: center;
 }
 
-#search input {
+#query input {
   width: 100%;
   height: 35px;
   border: 3px solid lightgrey;
@@ -36,7 +38,7 @@ main {
   text-indent: 15px;
 }
 
-#invoke {
+#search {
   z-index: +1;
   display: flex;
   justify-content: center;
@@ -55,23 +57,23 @@ main {
 footer {
   width: 100%;
   height: 150px;
-  display: flex;
+  display: flex; /* Breaking footer into 2 parts and align vertically */
   flex-direction: column;
   gap: 0;
 }
 
-#footer-pt1 {
-  width: 100%;
-  height: 75px;
+#footer-1 {
+  width: 100vw;
+  height: 20vh;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: flex-start;
+  flex-direction: flex-start; /* Using flex-box t align items horizontally */
   background-color: lightgrey;
   opacity: 50%;
 }
 
-#footer-pt2 {
+#footer-2 {
   width: 100%;
   height: 75px;
   display: flex;
@@ -103,16 +105,19 @@ a:link {
   color: black;
 }
 
+a:hover,
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
 #list-1,
 #list-2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 18px;
-}
-
-#footer-pt1 {
-  width: 100vw;
-  height: 20vh;
-  margin-bottom: 2px solid black;
 }
